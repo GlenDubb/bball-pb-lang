@@ -158,13 +158,13 @@ def layout_hex_grid(img, line_thickness=2):
     return img
 
 
-# image_file = 'court.png'
-# our_image = layout_hex_grid(our_image)
-# our_image = layout_court_boundary(our_image, boundary, court_size, court_line_thickness)
-# our_image = layout_key_area(our_image, court_size, key_size, court_line_thickness)
-# our_image = layout_court_markings(our_image, boundary, key_size, court_size, court_line_thickness)
-#
-# cv.imwrite(image_file, our_image)
+image_file = 'court2.png'
+our_image = layout_hex_grid(our_image)
+our_image = layout_court_boundary(our_image, boundary, court_size, court_line_thickness)
+our_image = layout_key_area(our_image, court_size, key_size, court_line_thickness)
+our_image = layout_court_markings(our_image, boundary, key_size, court_size, court_line_thickness)
+
+cv.imwrite(image_file, our_image)
 
 frames_per_action = 20
 
